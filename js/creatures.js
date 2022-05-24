@@ -6,357 +6,357 @@ export const creatureTypes = {
 	dino: 1,
 };
 
-export function drawCreature(gameCanvas) {
+export function drawCreature(gameCanvas, startx, starty) {
 	drawSquare({
 		canvas: gameCanvas,
-		x: 50,
-		y: 60,
+		x: startx + 15,
+		y: starty + 30,
 		size: 60,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 60,
-		y: 120,
-		size: 10,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: 60,
-		y: 130,
-		size: 10,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: 70,
-		y: 130,
-		size: 10,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: 90,
-		y: 120,
-		size: 10,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: 90,
-		y: 130,
-		size: 10,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: 100,
-		y: 130,
-		size: 10,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: 70,
-		y: 80,
+		x: startx + 35,
+		y: starty + 50,
 		size: 10,
 		color: '#F7F7F7',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 100,
-		y: 80,
+		x: startx + 65,
+		y: starty + 50,
 		size: 10,
 		color: '#F7F7F7',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 80,
-		y: 100,
+		x: startx + 45,
+		y: starty + 70,
 		size: 10,
 		color: '#F7F7F7',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 90,
-		y: 100,
+		x: startx + 55,
+		y: starty + 70,
 		size: 10,
 		color: '#F7F7F7',
+	});
+	drawSquare({
+		canvas: gameCanvas,
+		x: startx + 25,
+		y: starty + 90,
+		size: 10,
+		color: '#484848',
+	});
+	drawSquare({
+		canvas: gameCanvas,
+		x: startx + 55,
+		y: starty + 90,
+		size: 10,
+		color: '#484848',
+	});
+	drawSquare({
+		canvas: gameCanvas,
+		x: startx + 25,
+		y: starty + 100,
+		size: 10,
+		color: '#484848',
+	});
+	drawSquare({
+		canvas: gameCanvas,
+		x: startx + 35,
+		y: starty + 100,
+		size: 10,
+		color: '#484848',
+	});
+	drawSquare({
+		canvas: gameCanvas,
+		x: startx + 55,
+		y: starty + 100,
+		size: 10,
+		color: '#484848',
+	});
+	drawSquare({
+		canvas: gameCanvas,
+		x: startx + 65,
+		y: starty + 100,
+		size: 10,
+		color: '#484848',
 	});
 }
 
-export function drawDino(gameCanvas) {
+export function drawDino(gameCanvas, startx, starty) {
 	drawSquare({
 		canvas: gameCanvas,
-		x: 95,
-		y: 30,
+		x: startx + 60,
+		y: starty,
 		size: 30,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 105,
-		y: 30,
+		x: startx + 70,
+		y: starty,
 		size: 30,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 90,
-		y: 35,
+		x: startx + 55,
+		y: starty + 5,
 		size: 10,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 115,
-		y: 35,
+		x: startx + 80,
+		y: starty + 5,
 		size: 25,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 100,
-		y: 40,
+		x: startx + 65,
+		y: starty + 10,
 		size: 5,
 		color: '#F7F7F7',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 90,
-		y: 45,
+		x: startx + 55,
+		y: starty + 15,
 		size: 25,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 115,
-		y: 65,
+		x: startx + 80,
+		y: starty + 35,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 120,
-		y: 65,
+		x: startx + 85,
+		y: starty + 35,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 125,
-		y: 65,
+		x: startx + 90,
+		y: starty + 35,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 35,
-		y: 70,
+		x: startx,
+		y: starty + 40,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 85,
-		y: 70,
+		x: startx + 50,
+		y: starty + 40,
 		size: 20,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 35,
-		y: 75,
+		x: startx,
+		y: starty + 45,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 75,
-		y: 75,
+		x: startx + 40,
+		y: starty + 45,
 		size: 10,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 80,
-		y: 75,
+		x: startx + 45,
+		y: starty + 45,
 		size: 25,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 35,
-		y: 80,
+		x: startx,
+		y: starty + 50,
 		size: 10,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 65,
-		y: 80,
+		x: startx + 30,
+		y: starty + 50,
 		size: 20,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 105,
-		y: 80,
+		x: startx + 70,
+		y: starty + 50,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 110,
-		y: 80,
+		x: startx + 75,
+		y: starty + 50,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 35,
-		y: 85,
+		x: startx,
+		y: starty + 55,
 		size: 15,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 60,
-		y: 85,
+		x: startx + 25,
+		y: starty + 55,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 110,
-		y: 85,
+		x: startx + 75,
+		y: starty + 55,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 50,
-		y: 90,
+		x: startx + 15,
+		y: starty + 60,
 		size: 25,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 60,
-		y: 90,
+		x: startx + 25,
+		y: starty + 60,
 		size: 30,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 40,
-		y: 100,
+		x: startx + 5,
+		y: starty + 70,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 45,
-		y: 100,
+		x: startx + 10,
+		y: starty + 70,
 		size: 10,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 90,
-		y: 100,
+		x: startx + 55,
+		y: starty + 70,
 		size: 10,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 90,
-		y: 110,
+		x: startx + 55,
+		y: starty + 80,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 55,
-		y: 115,
+		x: startx + 20,
+		y: starty + 85,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 60,
-		y: 120,
+		x: startx + 25,
+		y: starty + 90,
 		size: 10,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 70,
-		y: 120,
+		x: startx + 35,
+		y: starty + 90,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 80,
-		y: 120,
+		x: startx + 45,
+		y: starty + 90,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 85,
-		y: 120,
+		x: startx + 50,
+		y: starty + 90,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 85,
-		y: 125,
+		x: startx + 50,
+		y: starty + 95,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 60,
-		y: 130,
+		x: startx + 25,
+		y: starty + 100,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 85,
-		y: 130,
+		x: startx + 50,
+		y: starty + 100,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 60,
-		y: 135,
+		x: startx + 25,
+		y: starty + 105,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 65,
-		y: 135,
+		x: startx + 30,
+		y: starty + 105,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 85,
-		y: 135,
+		x: startx + 50,
+		y: starty + 105,
 		size: 5,
 		color: '#484848',
 	});
 	drawSquare({
 		canvas: gameCanvas,
-		x: 90,
-		y: 135,
+		x: startx + 55,
+		y: starty + 105,
 		size: 5,
 		color: '#484848',
 	});
