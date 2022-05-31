@@ -1,19 +1,21 @@
 import { createCanvas } from './utilities/canvas-utils.js';
 import { creatureTypes, drawCreature, drawDino } from './creatures.js';
-import { obstacleTypes, drawBox } from '.obstacles.js';
+import { obstacleTypes, drawBox, drawCactus } from './obstacles.js';
 
 // Can be const instead of var
 const creatureType = creatureTypes.dino;
-const obstacleType = obstacleTypes.box;
+const obstacleType = obstacleTypes.cactus;
 const startingx = 35
-const startingy = 30
+const startingy = 230
+const objStartingx = 605
+const objStartingy = 230
 
 // enum, short for "enumeration"
 
 const gameCanvas = createCanvas({
 	parentElement: document.body,
-	widthPx: 400,
-	heightPx: 200,
+	widthPx: 800,
+	heightPx: 400,
 });
 
 if (creatureType === creatureTypes.creature) {
@@ -26,5 +28,8 @@ else if (creatureType === creatureTypes.dino) {
 }
 
 if (obstacleType === obstacleTypes.box) {
-	drawBox(gameCanvas, startingx, startingy)
+	drawBox(gameCanvas, objStartingx, objStartingy)
+}
+else if (obstacleType === obstacleTypes.cactus) {
+	drawCactus(gameCanvas, objStartingx, objStartingy)
 }
