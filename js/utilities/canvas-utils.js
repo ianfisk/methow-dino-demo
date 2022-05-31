@@ -8,3 +8,8 @@ export function createCanvas({ parentElement, widthPx, heightPx }) {
 
 	return canvas;
 }
+
+export function clearCanvas(gameCanvas) {
+	const ctx = gameCanvas.getContext('2d');
+	ctx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
+}
