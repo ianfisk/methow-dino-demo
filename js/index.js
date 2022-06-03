@@ -9,7 +9,9 @@ const gameCanvas = createCanvas({
 });
 
 let i = 0;
+let dino_animation_frame = 0;
 let previousFrameTimestamp = 0;
+export let leg_motion = 0;
 
 
 const dinoRunSpeed = 300; // Pixels per second
@@ -22,13 +24,23 @@ const objStartingy = 230;
 
 // 60 FPS = 16.67ms between frames
 function renderScene(currentTimestamp = 0) {
-	if (i >= 100) {
+	if (i >= 300) {
 		return;
+	}
+	if (dino_animation_frame === 15) {
+		leg_motion = 1;
+	} else if (dino_animation_frame === 30) {
+		leg_motion = 2;
 	}
 
 	clearCanvas(gameCanvas);
 
 	i += 1;
+	if (dino_animation_frame < 30) {
+		dino_animation_frame += 1;
+	} else if (dino_animation_frame === 30) {
+		dino_animation_frame = 0;
+	}
 
 	// If msSinceLastFrame === 1000 (1s), how many pixels has the dino moved? => 100 (dinoRunSpeed)
 	// Speed = Distance / time

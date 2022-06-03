@@ -1,11 +1,11 @@
 import { drawSquare } from './utilities/draw-utils.js';
+import { leg_motion } from './index.js'
 
 // Create a creature type "enumeration" (enum)
 export const creatureTypes = {
 	creature: 0,
 	dino: 1,
 };
-
 export function drawCreature(gameCanvas, startx, starty) {
 	drawSquare({
 		canvas: gameCanvas,
@@ -283,81 +283,246 @@ export function drawDino(gameCanvas, startx, starty) {
 		size: 5,
 		color: '#484848',
 	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 25,
-		y: starty + 90,
-		size: 10,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 35,
-		y: starty + 90,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 45,
-		y: starty + 90,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 50,
-		y: starty + 90,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 50,
-		y: starty + 95,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 25,
-		y: starty + 100,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 50,
-		y: starty + 100,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 25,
-		y: starty + 105,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 30,
-		y: starty + 105,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 50,
-		y: starty + 105,
-		size: 5,
-		color: '#484848',
-	});
-	drawSquare({
-		canvas: gameCanvas,
-		x: startx + 55,
-		y: starty + 105,
-		size: 5,
-		color: '#484848',
-	});
+	if (leg_motion === 0) {
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 90,
+			size: 10,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 35,
+			y: starty + 90,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 45,
+			y: starty + 90,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 90,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 95,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 100,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 100,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 105,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 30,
+			y: starty + 105,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 105,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 55,
+			y: starty + 105,
+			size: 5,
+			color: '#484848',
+		});
+	} else if (leg_motion === 1) {
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 90,
+			size: 10,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 35,
+			y: starty + 90,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 45,
+			y: starty + 80,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 80,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 85,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 100,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 90,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 105,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 30,
+			y: starty + 105,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 95,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 55,
+			y: starty + 95,
+			size: 5,
+			color: '#484848',
+		});
+	} else if (leg_motion === 2) {
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 80,
+			size: 10,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 35,
+			y: starty + 80,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 45,
+			y: starty + 90,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 90,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 85,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 95,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 90,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 100,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 25,
+			y: starty + 95,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 30,
+			y: starty + 95,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 50,
+			y: starty + 105,
+			size: 5,
+			color: '#484848',
+		});
+		drawSquare({
+			canvas: gameCanvas,
+			x: startx + 55,
+			y: starty + 105,
+			size: 5,
+			color: '#484848',
+		});
+	}
 }
