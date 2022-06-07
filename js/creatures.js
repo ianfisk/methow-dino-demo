@@ -1,11 +1,17 @@
 import { drawSquare } from './utilities/draw-utils.js';
-import { leg_motion } from './index.js'
 
 // Create a creature type "enumeration" (enum)
 export const creatureTypes = {
 	creature: 0,
 	dino: 1,
 };
+
+export const legMotionTypes = {
+	off: 0,
+	rightLegUpLeftLegDown: 1,
+	leftLegUpRightLegDown: 2,
+};
+
 export function drawCreature(gameCanvas, startx, starty) {
 	drawSquare({
 		canvas: gameCanvas,
@@ -86,7 +92,7 @@ export function drawCreature(gameCanvas, startx, starty) {
 	});
 }
 
-export function drawDino(gameCanvas, startx, starty) {
+export function drawDino(gameCanvas, startx, starty, leg_motion = legMotionTypes.off) {
 	drawSquare({
 		canvas: gameCanvas,
 		x: startx + 60,

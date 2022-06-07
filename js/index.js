@@ -1,5 +1,5 @@
 import { clearCanvas, createCanvas } from './utilities/canvas-utils.js';
-import { creatureTypes, drawCreature, drawDino } from './creatures.js';
+import { creatureTypes, drawCreature, drawDino, legMotionTypes } from './creatures.js';
 import { obstacleTypes, drawBox, drawCactus } from './obstacles.js';
 
 const gameCanvas = createCanvas({
@@ -11,7 +11,7 @@ const gameCanvas = createCanvas({
 let i = 0;
 let dino_animation_frame = 0;
 let previousFrameTimestamp = 0;
-export let leg_motion = 0;
+let leg_motion = 0;
 
 
 const dinoRunSpeed = 300; // Pixels per second
@@ -28,9 +28,9 @@ function renderScene(currentTimestamp = 0) {
 		return;
 	}
 	if (dino_animation_frame === 15) {
-		leg_motion = 1;
+		leg_motion = legMotionTypes.rightLegUpLeftLegDown;
 	} else if (dino_animation_frame === 30) {
-		leg_motion = 2;
+		leg_motion = legMotionTypes.leftLegUpRightLegDown;
 	}
 
 	clearCanvas(gameCanvas);
@@ -63,7 +63,7 @@ function renderScene(currentTimestamp = 0) {
 		drawCreature(gameCanvas, startingx, startingy);
 	} else if (creatureType === creatureTypes.dino) {
 		// Attempt at Dino
-		drawDino(gameCanvas, startingx, startingy);
+		drawDino(gameCanvas, startingx, startingy, leg_motion);
 	}
 
 	if (obstacleType === obstacleTypes.box) {
